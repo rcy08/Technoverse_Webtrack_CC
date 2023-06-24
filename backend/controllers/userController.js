@@ -158,10 +158,15 @@ const getuserdetails = async (req, res) => {
     });
 }
 
+const getservices = async(req, res) => {
+    
+}
+
 module.exports = {
     signup,
     login,
     forgotpassword,
     resetpassword,
     getuserdetails,
+    getservices
 }

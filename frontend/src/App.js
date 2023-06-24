@@ -8,6 +8,7 @@ import PrivateRoute from './utils/PrivateRoute';
 import AccountDetails from './pages/AccountDetails';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
+import Services from './pages/Services';
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
           <Route 
             path='/'
             element={<Home />}
+          />
+          <Route
+            path='/services'
+            element={<Services />}
           />
           <Route 
             path='/signup'
