@@ -27,7 +27,7 @@ const Services = () => {
                         <option value="Vehicle Loans">Vehicle Loans</option>
                         <option value="Road accidents">Road accidents</option>
                     </select> */}
-                    <div class="btn-group">
+                    <div className="btn-group">
                         <button type="button" className ="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             CA
                         </button>
@@ -39,7 +39,7 @@ const Services = () => {
                             {/* <li><a className="dropdown-item" href="#">Separated link</a></li> */}
                         </ul>
                     </div>
-                    <div class="btn-group">
+                    <div className="btn-group">
                         <button type="button" className ="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             Architect
                         </button>
@@ -53,7 +53,7 @@ const Services = () => {
                             <li><a className="dropdown-item" href="#">Road Accidents</a></li>
                         </ul>
                     </div>
-                    <div class="btn-group">
+                    <div className="btn-group">
                         <button type="button" className ="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             Lawyer
                         </button>
