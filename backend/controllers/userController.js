@@ -191,11 +191,25 @@ const getbookings = async(req, res) => {
     
 }
 
+const userbookings = async(req, res) => {
+    const user = req.user;
+
+    const id = user._id;
+
+    const booking = await Booking.findOne({userId: id});
+
+    let sum = booking.ca.length + booking.architect.length + booking.lawyer.length;
+
+    res.status(201).json({data: sum});
+
+}
+
 module.exports = {
     signup,
     login,
     forgotpassword,
     resetpassword,
     getuserdetails,
+    userbookings,
     getbookings
 }

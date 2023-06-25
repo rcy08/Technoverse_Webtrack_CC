@@ -5,6 +5,7 @@ const {
     forgotpassword,
     resetpassword,
     getuserdetails,
+    userbookings,
     getbookings
 } = require('../controllers/userController');
 
@@ -21,6 +22,8 @@ router.post('/forgot-password', forgotpassword);
 router.put('/reset-password/:resetToken', resetpassword);
 
 router.get('/account-details', auth, getuserdetails);
+
+router.get('/my-bookings', auth, userbookings);
 
 router.post('/bookings/:id/:type', getbookings);
 

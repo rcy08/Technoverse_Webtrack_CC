@@ -10,6 +10,7 @@ import Error from './pages/Error';
 import Navbar from './components/Navbar';
 import Services from './pages/Services';
 import Service from './pages/Service';
+import UserBookings from './pages/UserBookings';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           
           <Route element={<PrivateRoute />} > 
             <Route path='/account-details' element={<AccountDetails />} />
+            <Route path='/my-bookings' element={<UserBookings />} />
             <Route />
           </Route>
           
