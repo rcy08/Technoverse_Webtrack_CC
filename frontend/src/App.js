@@ -34,7 +34,7 @@ function App() {
             element={<Services />}
           />
           <Route 
-            path='/services/:serviceName'
+            path='/services/:type/:serviceName'
             element={<Service />}
           />
           <Route 

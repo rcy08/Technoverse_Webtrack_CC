@@ -169,6 +169,7 @@ const getuserdetails = async (req, res) => {
 }
 
 const getbookings = async(req, res) => {
+    
     const { id, type } = req.params;
 
     const user = await Booking.findOne({ userId: id });
@@ -187,6 +188,7 @@ const getbookings = async(req, res) => {
     await user.save();
 
     res.status(201).json({ success: true, data: 'Service booked' });
+    
 }
 
 module.exports = {

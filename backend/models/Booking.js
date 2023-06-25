@@ -5,14 +5,12 @@ const bookingSchema = new Schema({
     userId: {
         type: String,
     },
+
     ca: [String],
+
+    architect: [String],
     
-    architect: {
-        type: Array,
-    },
-    lawyer: {
-        type: Array,
-    }
+    lawyer: [String]
 });
 
 

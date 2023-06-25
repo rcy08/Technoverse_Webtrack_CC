@@ -8,11 +8,9 @@ const Services = () => {
                             CA
                         </button>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="/services/Financial-Audit">Financial Audit</a></li>
-                            <li><a className="dropdown-item" href="/services/">Financial Planning</a></li>
-                            <li><a className="dropdown-item" href="/services/">Handling Taxes</a></li>
-                            {/* <li><hr className="dropdown-divider"/>  </li> */}
-                            {/* <li><a className="dropdown-item" href="#">Separated link</a></li> */}
+                            <li><a className="dropdown-item" href="/services/ca/Financial-Audit">Financial Audit</a></li>
+                            <li><a className="dropdown-item" href="/services/ca/Financial-Planning">Financial Planning</a></li>
+                            <li><a className="dropdown-item" href="/services/ca/Handling-Taxes">Handling Taxes</a></li>
                         </ul>
                     </div>
 
@@ -22,13 +20,8 @@ const Services = () => {
                             Architect
                         </button>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="/services/">Legal help related to property matters</a></li>
-                            <li><a className="dropdown-item" href="/services/">Registering Property</a></li>
-                            <li><a className="dropdown-item" href="/services/">Registering A Company</a></li>
-                            {/* <li><hr className="dropdown-divider"/>  </li> */}
-                            <li><a className="dropdown-item" href="/services/">Family Disputes</a></li>
-                            <li><a className="dropdown-item" href="/services/">Vehicle Loans</a></li>
-                            <li><a className="dropdown-item" href="/services/">Road Accidents</a></li>
+                            <li><a className="dropdown-item" href="/services/architect/House-Construction">House Construction</a></li>
+                            <li><a className="dropdown-item" href="/services/architect/Interior-Design">Interior Design</a></li>
                         </ul>
                     </div>
 
@@ -38,14 +31,14 @@ const Services = () => {
                             Lawyer
                         </button>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">House construction</a></li>
-                            <li><a className="dropdown-item" href="#">Interior design</a></li>
-                            {/* <li><a className="dropdown-item" href="#">Handling Taxes</a></li>
-                            {/* <li><hr className="dropdown-divider"/>  </li> */}
-                            <li><a className="dropdown-item" href="#">Separated link</a></li> 
+                            <li><a className="dropdown-item" href="/services/lawyer/Property-Matters">Property Matters</a></li>
+                            <li><a className="dropdown-item" href="/services/lawyer/Registering-Property">Registering Property</a></li>
+                            <li><a className="dropdown-item" href="/services/lawyer/Registering-A-Company">Registering A Company</a></li>
+                            <li><a className="dropdown-item" href="/services/lawyer/Family-Disputes">Family Disputes</a></li>
+                            <li><a className="dropdown-item" href="/services/lawyer/Vehicle-Loans">Vehicle Loans</a></li>
+                            <li><a className="dropdown-item" href="/services/lawyer/Road-Accidents">Road Accidents</a></li>
                         </ul>
                     </div>
-
 
 
             </div>
