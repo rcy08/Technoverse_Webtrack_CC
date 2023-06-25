@@ -174,14 +174,14 @@ const getbookings = async(req, res) => {
 
     const user = await Booking.findOne({ userId: id });
 
-    const arr = user[type];
+    // const arr = user[type];
     const { serviceName } = req.body;
 
-    arr.forEach(element => {
-        if(element == serviceName){
-            return res.status(400).json({ error: `Can't book a service more than once!` });
-        }
-    });
+    // arr.forEach(element => {
+    //     if(element == serviceName){
+    //         return res.status(400).json({ error: `Can't book a service more than once!` });
+    //     }
+    // });
 
     user[type].push(serviceName);
 

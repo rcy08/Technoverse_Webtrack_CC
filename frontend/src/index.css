@@ -48,6 +48,20 @@ body::before{
     justify-content: space-between;
 }
 
+.service-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-box h2{
+    margin-bottom: 30px;
+}
+.service-box button{
+    width: 130px;
+    height: 56px;
+    margin: 20px 5px;
+}
+
 
 /* https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?w=1060&t=st=1684751752~exp=1684752352~hmac=a4f47c8af4bcef32dc706390bdb991a2cd1aabda52f42b868d51c26b61df47ac */
 

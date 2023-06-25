@@ -65,10 +65,12 @@ const Service = () => {
     return (
         <div className="container">
 
-            <h1> {serviceName} </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <button className="btn btn-dark" onClick={handleClick}> Book Service </button>
-            <h2>{status}</h2>
+            <div className="service-box">
+              <h2> {serviceName} </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusantium delectus dolorum neque quia iusto sapiente sequi impedit!</p>
+              <button className="btn btn-dark" onClick={handleClick}> Book Service </button>
+              <h2>{status}</h2>
+            </div>
             
         </div>
     );
