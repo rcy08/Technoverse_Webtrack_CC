@@ -9,6 +9,7 @@ import AccountDetails from './pages/AccountDetails';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
 import Services from './pages/Services';
+import Service from './pages/Service';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           
           <Route element={<PrivateRoute />} > 
             <Route path='/account-details' element={<AccountDetails />} />
+            <Route />
           </Route>
           
           <Route 
@@ -30,6 +32,10 @@ function App() {
           <Route
             path='/services'
             element={<Services />}
+          />
+          <Route 
+            path='/services/:serviceName'
+            element={<Service />}
           />
           <Route 
             path='/signup'

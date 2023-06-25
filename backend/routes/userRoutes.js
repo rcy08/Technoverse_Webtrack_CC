@@ -5,7 +5,7 @@ const {
     forgotpassword,
     resetpassword,
     getuserdetails,
-    getservices
+    getbookings
 } = require('../controllers/userController');
 
 const { auth } = require('../middleware/auth');
@@ -22,7 +22,7 @@ router.put('/reset-password/:resetToken', resetpassword);
 
 router.get('/account-details', auth, getuserdetails);
 
-router.get('/services', getservices);
+router.post('/bookings/:id/:type', getbookings);
 
 module.exports = router;
 
