@@ -69,7 +69,7 @@ const Service = () => {
               <h2> {serviceName} </h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusantium delectus dolorum neque quia iusto sapiente sequi impedit!</p>
               <button className="btn btn-dark" onClick={handleClick}> Book Service </button>
-              <h2>{status}</h2>
+              <h3>{status}</h3>
             </div>
             
         </div>
