@@ -1,4 +1,5 @@
 const User = require('../models/User');
+const Booking = require('../models/Booking');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const sendEmail = require('../utils/sendEmail');
@@ -44,6 +45,15 @@ const signup = async (req, res) => {
 
     try {
         const user = await User.create({ email, password });
+
+        const booking = await Booking.create({ 
+            userId: user._id,
+            bookings: {
+                ca: [],
+                architect: [],
+                lawyer: []
+            }
+        });
 
         res.status(201).json({ user: user._id });
 
@@ -158,8 +168,25 @@ const getuserdetails = async (req, res) => {
     });
 }
 
-const getservices = async(req, res) => {
-    
+const getbookings = async(req, res) => {
+    const { id, type } = req.params;
+
+    const user = await Booking.findOne({ userId: id });
+
+    const arr = user[type];
+    const { serviceName } = req.body;
+
+    arr.forEach(element => {
+        if(element == serviceName){
+            return res.status(400).json({ error: `Can't book a service more than once!` });
+        }
+    });
+
+    user[type].push(serviceName);
+
+    await user.save();
+
+    res.status(201).json({ success: true, data: 'Service booked' });
 }
 
 module.exports = {
@@ -168,5 +195,5 @@ module.exports = {
     forgotpassword,
     resetpassword,
     getuserdetails,
-    getservices
+    getbookings
 }
