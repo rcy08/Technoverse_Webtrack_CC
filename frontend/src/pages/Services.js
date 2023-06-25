@@ -2,7 +2,6 @@ const Services = () => {
     return (
         <div className="container">
             <div className="services-box">
-
                     <div className="btn-group">
                         <button type="button" className ="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             CA
@@ -45,9 +44,6 @@ const Services = () => {
                             <li><a className="dropdown-item" href="#">Separated link</a></li> 
                         </ul>
                     </div>
-
-
-
             </div>
         </div>
     );
