@@ -1,3 +1,2 @@
 # Technoverse_Webtrack_CC
-Changing the readme file
-ok
+This project aims to help individuals who seek guidance on a variety of topics. The individual can schedule a booking and be benefitted accordingly.
